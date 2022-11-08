@@ -7,7 +7,7 @@ keywords:
   - sql
 home: https://pgbouncer.github.io
 sources:
-  - https://github.com/fopark/charts
+  - https://github.com/SimonMinarik/pgbouncer-chart
 maintainers:
   - name: Parker Roan
     email: roanresources@gmail.com
