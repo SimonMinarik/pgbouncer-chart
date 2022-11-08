@@ -1,0 +1,14 @@
+name: pgbouncer
+version: 0.2.1
+description: Chart for PGBouncer
+keywords:
+  - postgresql
+  - database
+  - sql
+home: https://pgbouncer.github.io
+sources:
+  - https://github.com/fopark/charts
+maintainers:
+  - name: Parker Roan
+    email: roanresources@gmail.com
+engine: gotpl
