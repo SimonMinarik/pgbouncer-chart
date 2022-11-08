@@ -15,7 +15,7 @@ entries:
       name: Parker
     name: pgbouncer
     sources:
-    - https://github.com/fopark/charts
+    - https://github.com/SimonMinarik/pgbouncer-chart
     urls:
     - pgbouncer-0.2.1.tgz
     version: 0.2.1
