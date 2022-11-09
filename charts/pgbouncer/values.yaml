@@ -2,6 +2,7 @@
 ## See https://kubernetes.io/docs/concepts/containers/images/
 image: drekthral/pgbouncer
 imagePullPolicy: IfNotPresent
+imageTag: "latest"
 
 ## The number of PgBouncer pods.
 replicasCount: 2
