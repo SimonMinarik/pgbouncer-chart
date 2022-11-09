@@ -1,9 +1,18 @@
 FROM ubuntu:22.04
-RUN apt-get update && apt install -y pgbouncer=1.16.1-1ubuntu1 postgresql-client-9.5
-RUN useradd pgbouncer -b '/' -m
-USER pgbouncer
+
+RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
+  DEBIAN_FRONTEND=noninteractive apt-get -qy dist-upgrade && \
+  DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends pgbouncer=1.16.1-1ubuntu1 && \
+  DEBIAN_FRONTEND=noninteractive apt-get -qy clean && \
+  rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+RUN mkdir -p /var/log/postgresql
+RUN chmod -R 755 /var/log/postgresql
+RUN chown -R postgres:postgres /var/log/postgresql
+
+
 ENV PG_CONFIG /etc/pgbouncer/pgbouncer.ini
-RUN chmod 777 /etc/pgbouncer/pgbouncer.ini
-COPY run.sh /run.sh
-COPY do_probe.sh /do_probe.sh
-ENTRYPOINT /run.sh
+ENV PG_USER postgres
+
+USER postgres
+ENTRYPOINT pgbouncer -u $PG_USER $PG_CONFIG
