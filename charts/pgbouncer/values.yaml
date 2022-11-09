@@ -5,7 +5,7 @@ imagePullPolicy: IfNotPresent
 imageTag: "latest"
 
 ## The number of PgBouncer pods.
-replicasCount: 2
+replicasCount: 1
 
 ## These are the PostgreSQL connection credentials.
 username: ""

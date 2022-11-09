@@ -1,4 +1,6 @@
 #!/bin/bash
+ls -la
+ls -la pgbouncer
 password_checksummed=$(echo -n "$PG_PASS$PG_USER" | md5sum)
 password_checksummed=${password_checksummed:0:32}
 cat <<EOF > /pgbouncer/users.txt
