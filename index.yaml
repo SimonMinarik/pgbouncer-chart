@@ -1,9 +1,9 @@
 apiVersion: v1
 entries:
   pgbouncer:
-  - created: "2022-11-09T01:24:27.968433+01:00"
+  - created: "2022-11-09T02:06:06.933068+01:00"
     description: Chart for PGBouncer
-    digest: 6ff666b55e186517800dcba3f5b21b98b445f996e3c4866ef28a55799316129d
+    digest: af2bde021875186a6e96870fa60222a78d502e0dc277ff43b6aac9fb4b64e47c
     engine: gotpl
     home: https://pgbouncer.github.io
     keywords:
@@ -11,12 +11,12 @@ entries:
     - database
     - sql
     maintainers:
-    - email: ops@futuretech.industries
-      name: FutureTech Industries
+    - email: roanresources@gmail.com
+      name: Parker Roan
     name: pgbouncer
     sources:
-    - https://github.com/clearbit/charts
+    - https://github.com/SimonMinarik/pgbouncer-chart
     urls:
     - https://simonminarik.github.io/pgbouncer-chart/pgbouncer-0.2.1.tgz
     version: 0.2.1
-generated: "2022-11-09T01:24:27.966527+01:00"
+generated: "2022-11-09T02:06:06.931379+01:00"

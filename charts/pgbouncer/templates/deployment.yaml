@@ -9,6 +9,9 @@ metadata:
     heritage: "{{ .Release.Service }}"
 spec:
   replicas: {{ .Values.replicasCount }}
+  selector:
+    matchLabels:
+      app: {{ .Release.Name }}
   template:
     metadata:
       annotations:
