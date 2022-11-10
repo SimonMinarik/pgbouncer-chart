@@ -1,9 +1,9 @@
 apiVersion: v1
 entries:
   pgbouncer:
-  - created: "2022-11-09T20:41:02.852415+01:00"
+  - created: "2022-11-10T12:32:55.572205+01:00"
     description: Chart for PGBouncer
-    digest: 519f4e294257735926e6a6121b5f732afdc0bc7678210d82c7985212ec207d22
+    digest: d8faf1ff917d4093a611179b825748c67377ac64b86eb128076771f9199be483
     engine: gotpl
     home: https://pgbouncer.github.io
     keywords:
@@ -19,4 +19,4 @@ entries:
     urls:
     - pgbouncer-0.2.1.tgz
     version: 0.2.1
-generated: "2022-11-09T20:41:02.851805+01:00"
+generated: "2022-11-10T12:32:55.567919+01:00"
